@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Panda Hamma</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+	<!--Botón Pistas-->
+
+	<div id="pistas">
+		<div class="contenedor-pistas">
+ 			<ul>
+                <li>Inicia sesión</li>
+                <li>Agrega almenos 3 hamas en el carrito</li>
+                <li>"Compralos"(no te preocupes, no hay proceso de pago)</li>
+            </ul>
+		</div>
+		<div class="btn-pistas">?</div>
+	</div>
+
+	<!--- header --->
+	<div class="container header">
+		<div class="row nav">
+			<div class="col-4 redes">
+				<a class= "twitter"href="https://www.facebook.com/ElpandaHama"><img src="img/facebookblu.png"></i></a>
+				<a class= "facebook"href="#"><img src="img/twitterblu.png"></i></a>
+				<a class= "instagram"href="#"><img src="img/instagramblu.png"></i></a>
+			</div>
+			<div class="col-4 logo"><a href="index.html"><img src="img/logoB.png"></a></div>
+			<div class="col-sm-2 col-3 sesionCont">
+				<div class="textosesion dropdown-toggle" data-toggle="dropdown"><img src="" alt=""><span id="textoSesion">Iniciar Sesión</span></div>
+				<img src="img/sesion.png" class="inicses">
+				<div class="sesion" aria-labelledby="dropdownMenuButton">
+					<div class="contenidoSesion" id="sesionActiva">
+						<div class ="localidad"><img src="img/unbicacion.svg" width="30px" alt=""><span>México, CDMX</span><span class="cerrarEsto">X</span></div>
+						<a href="/perfil.html" class="menu-opcion"><div class="simbolo"><img src="img/perfil.svg" alt=""></div><span>Ver Perfil</span></a>
+						<a href="/compras.html" class="menu-opcion"><div class="simbolo"><img src="img/compras.svg" alt=""></div><span>Historial de compras</span> </a>
+						<a href="/configuraciones.html" class="menu-opcion"><div class="simbolo"><img src="img/configuracion.svg" alt=""></div><span>Configuraciónes</span> </a>
+						<button class="btn btn-danger" id="cerrar-sesion">Cerrar Sesión</button>
+					</div>
+					<div class="contenidoSesion" id="sesionInactiva">
+						<div class="combo-label-input"><span class="cerrarEsto">X</span>
+							<label class="subs" for="usuario">Usuario</label>
+							<input type="text" id="usuario" value="usuario">
+						</div>
+						<div class="combo-label-input">
+							<label class="subs" for="password" >Contraseña</label>
+							<input type="password" id="password" value="contrasena">
+						</div>
+						<button class="btn btn-primary" id="iniciar-sesion">Iniciar Sesion</button>
+						<button class="btn btn-secondary" id="registrarme">Registrarme</button>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col--sm-2 col-1 carrito">
+					<div id="contadorCarrito">
+						0
+					</div>
+                    <img src="img/cart1.png" id="img-carrito">
+                      	<div id="carrito">    
+							<span class="cerrarCarrito">X</span>
+							<div class="lista-carrito">
+								<table id="lista-carrito" class="u-full-width">
+									<thead>
+									<tr>
+										<th>Imagen</th>
+										<th>Nombre</th>
+										<th>Precio</th>
+										<th>Cantidad</th>
+										<th></th>
+									</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table> 
+							</div>
+							<span class="carrito-vacio">Sin elementos seleccionados.</span>
+							<div id="filaTotal" class="filaTotal"><span>Total:  </span><span id="cantidadTotal">$5000</span></div>
+							<button class="btn botoncar u-full-width" id="comprar-carrito">Comprar</button>
+							<button class="btn btn-secondary u-full-width" id="vaciar-carrito">Vaciar Carrito</button>
+
+                           
+                         </div>
+			</div>
+		</div>
+	</div>
+
+	<!--- comerciales --->
+	<section class="comercial">
+			<div class="carrusel">
+				<div class="carousel slide" id="principal-carousel" data-ride="carousel">
+					<div class="carousel-inner">
+						<picture class="carousel-item active">
+							<source media="(max-width: 500px)" srcset="img/carrusel1exSM.jpg">
+							<source media="(max-width: 750px)" srcset="img/carrusel1SM.jpg">
+							<source media="(max-width: 1130px)" srcset="img/carrusel1MD.jpg">
+							<img src="img/carrusel1.jpg">
+						</picture>
+						<picture class="carousel-item ">
+							<source media="(max-width: 500px)" srcset="img/carrusel2exSM.jpg">
+							<source media="(max-width: 750px)" srcset="img/carrusel2SM.jpg">
+							<source media="(max-width: 1130px)" srcset="img/carrusel2MD.jpg">
+							<img src="img/carrusel2.jpg">
+						</picture>
+						<picture class="carousel-item ">
+							<source media="(max-width: 500px)" srcset="img/carrusel3exSM.jpg">
+							<source media="(max-width: 750px)" srcset="img/carrusel3SM.jpg">
+							<source media="(max-width: 1130px)" srcset="img/carrusel3MD.jpg">
+							<img src="img/carrusel3.jpg">
+						</picture>
+					</div>
+
+					<a href="#principal-carousel" class="carousel-control-prev" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Anterior</span>
+					</a>
+					<a href="#principal-carousel" class="carousel-control-next" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Siguiente</span>
+					</a>
+				</div>
+			</div>
+	</section>
+
+
+	<!--- lo mas vendido --->
+	<section class="container" >
+		<div class="row text">
+			<div class="col lomas"><p>LOS MAS VENDIDOS</p></div>
+		</div>
+		<div class="row vendidos" id="topVendidos">
+			
+			<div class="col-6 col-sm-4 col-lg-2 producto">
+				<div class="foto"><a href="#"><img src="img/mewtwoarmadura.jpg"></a></div>
+				<div class="nombre"><p>Mewto Armadura</p></div>
+				<div class="tamano"><p>30x60</p></div>
+				<div class="precio"><p>$200</p></div>
+				<div class="boton">
+					<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+				</div>
+			</div>
+			<div class="col-6 col-sm-4 col-lg-2 producto">
+				<div class="foto"><a href="#"><img src="img/megacharizardx.jpg"></a></div>
+				<div class="nombre"><p>Mega Charizard X</p></div>
+				<div class="tamano"><p>30x30</p></div>
+				<div class="precio"><p>$140</p></div>
+				<div class="boton">
+					<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+				</div>
+			</div>
+			<div class="col-6 col-sm-4 col-lg-2 producto">
+				<div class="foto"><a href="#"><img src="img/pikachu.jpg"></a></div>
+				<div class="nombre"><br><p>Pikachu</p></div>
+				<div class="tamano"><p>30x30</p></div>
+				<div class="precio"><p>$160</p></div>
+				<div class="boton">
+					<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+				</div>
+			</div>
+			<div class="col-6 col-sm-4 col-lg-2 producto penultimo">
+				<div class="foto"><a href="#"><img src="img/milotic.jpg"></a></div>
+				<div class="nombre"><p>Milotic Shiny</p></div>
+				<div class="tamano"><p>30x30</p></div>
+				<div class="precio"><p>$120</p></div>
+				<div class="boton">
+					<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+				</div>
+			</div>
+			<div class="col-6 col-sm-4 col-lg-2 producto last">
+				<div class="foto"><a href="#"><img src="img/snivy.jpg"></a></div>
+				<div class="nombre"><p>Snivy</p></div>
+				<div class="tamano"><p>20x20</p></div>
+				<div class="precio"><p>$90</p></div>
+				<div class="boton">
+					<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+				</div>
+			</div>
+			
+		</div> 
+
+	</section>
+
+	<!--- comercial 2 ---> 
+	
+
+	<div class="hero segundocomercial">
+		<picture>
+			<source media="(max-width: 750px)" srcset="img/hero-mobile.jpg">
+			<source media="(max-width: 1024px)" srcset="img/hero-desktop.jpg">
+			<img src="img/hero-desktop.jpg" alt="Hero banner">
+		</picture>
+		<div class="action">
+			<a class="btn" id="preventa" href="https://www.facebook.com/ElpandaHama">PREVENTA DISPONIBLE</a>
+		</div>
+	</div>
+
+
+	<!---- Resto de la pagina ---->
+
+	<div class="container categorias">
+		<div class="row new_categorias">
+				<select class= "selectcategorias" name="categorias" id="categorias">
+  					<option value="1">Todos</option>
+  					<option value="2">Pokemon</option>
+  					<option value="3">Anime</option>
+  					<option value="4">Animales</option>
+  					<option value="5">Azul</option>
+  					<option value="6">Videojuegos</option>
+				</select>
+		</div>
+		<div class="row row_categorias">
+			<div class="listacategortias col-4">
+				<p class="titulo_categorias">Categorias</p>
+				<ul class="menu" id="listadoCategorias">
+					<li> <a href="#">Todos (1000) </a></li>
+					<li> <a href="#">Pokémon (350)</a></li>
+					<li> <a href="#">Anime (200)</a></li>
+					<li> <a href="#">Animales (300)</a></li>
+					<li> <a href="#">Azul (360)</a></li>
+					<li> <a href="#">Videojuegos (122)</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-8 col-12">
+				<div class="row" id="coleccionHammas">
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/avedelparaiso.jpg"></a></div>
+							<div class="nombre"><p>Ave del paraiso</p></div>
+							<div class="tamano"><p>60x30</p></div>
+							<div class="precio"><p>$200</p></div>
+							<div class="catego"><p><a href="#">#animal</a> <a href="#">#azul</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/kyogare.jpg"></a></div>
+							<div class="nombre"><p>kyogare</p></div>
+							<div class="tamano"><p>60x30</p></div>
+							<div class="precio"><p>$240</p></div>
+							<div class="catego"><p><a href="#">#azul</a> <a href="#">#Pokemon</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/tepig.jpg"></a></div>
+							<div class="nombre"><p>Tepig</p></div>
+							<div class="tamano"><p>20x20</p></div>
+							<div class="precio"><p>$90</p></div>
+							<div class="catego"><p><a href="#">#Naranja</a> <a href="#">#Pokemon</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/mewtwoshiny.jpg"></a></div>
+							<div class="nombre"><p>Shiny Mewtwo</p></div>
+							<div class="tamano"><p>30x30</p></div>
+							<div class="precio"><p>$120</p></div>
+							<div class="catego"><p><a href="#">#Pokemon</a> <a href="#">#Shiny</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/gyaradosshiny.jpg"></a></div>
+							<div class="nombre"><p>Shiny Gyarados</p></div>
+							<div class="tamano"><p>40x40</p></div>
+							<div class="precio"><p>$120</p></div>
+							<div class="catego"><p><a href="#">#Pokemon</a> <a href="#">#Shiny</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+						</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/oshawott.jpg"></a></div>
+							<div class="nombre"><p>Oshawott</p></div>
+							<div class="tamano"><p>20x20</p></div>
+							<div class="precio"><p>$90</p></div>
+							<div class="catego"><p><a href="#">#Azul</a> <a href="#">#Pokemon</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/mariopaz.jpg"></a></div>
+							<div class="nombre"><p>Mario</p></div>
+							<div class="tamano"><p>30x50</p></div>
+							<div class="precio"><p>$140</p></div>
+							<div class="catego"><p><a href="#">#Rojo</a> <a href="#">#Videojuegos</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/alphonseelricfma.jpg"></a></div>
+							<div class="nombre"><p>Alphonse Elric FMA</p></div>
+							<div class="tamano"><p>30x50</p></div>
+							<div class="precio"><p>$120</p></div>
+							<div class="catego"><p><a href="#">#Anime</a> <a href="#">#Rojo</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/greymon.jpg"></a></div>
+							<div class="nombre"><p>Greymon</p></div>
+							<div class="tamano"><p>40x40</p></div>
+							<div class="precio"><p>$150</p></div>
+							<div class="catego"><p><a href="#">#Digimon</a> <a href="#">#Naranja</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/sailormoon.jpg"></a></div>
+							<div class="nombre"><p>Sailor Moon</p></div>
+							<div class="tamano"><p>30x40</p></div>
+							<div class="precio"><p>$140</p></div>
+							<div class="catego"><p><a href="#">#Anime</a> <a href="#">#Azul</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/megaman.jpg"></a></div>
+							<div class="nombre"><p>Megaman</p></div>
+							<div class="tamano"><p>25x25</p></div>
+							<div class="precio"><p>$100</p></div>
+							<div class="catego"><p><a href="#">#Azul</a> <a href="#">#Videojuegos</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+					<div class="col-6 col-sm-4 col-lg-4 producto">
+							<div class="foto"><a href="#"><img src="img/yoshi.jpg"></a></div>
+							<div class="nombre"><p>Yoshi</p></div>
+							<div class="tamano"><p>25x30</p></div>
+							<div class="precio"><p>$150</p></div>
+							<div class="catego"><p><a href="#">#Verde</a> <a href="#">#Videojuegos</a></p></div>
+							<div class="boton">
+								<button type="button" class="btn-naranja"><p>Agregar al carrito</p></button>
+							</div>
+					</div>
+				</div>
+				<div class="row" id="compaginacionHammas">
+		
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--- Footer ---->
+
+	<div class="footer">
+		<div class="container pie">
+			<div class="row">
+			<div class="col-12 redes-sm">
+				<div class="redesblancas">
+				<a class= "twitter"href="https://www.facebook.com/ElpandaHama"><img src="img/facebookw.png"></a>
+				<a class= "facebook"href="#"><img src="img/twitterw.png"></a>
+				<a class= "instagram"href="#"><img src="img/instagramw.png"></a>
+				</div>
+			</div>
+
+			<div class="col-6 col-md-4 servicio">
+				<p>Servicio al cliente</p>
+				<div class="h_line"></div>
+				<ul>
+ 					<li><a href="/404.html">Contactos</a></li>
+ 					<li><a href="/404.html">FAQS</a></li>
+ 					<li><a href="/404.html">Sobre Nosotros</a></li>
+ 					<li><a href="/404.html">Política de privacidad</a></li>
+ 					<li><a href="/404.html">Término de uso</a></li>
+ 					<li><a href="/404.html">Evíos</a></li>
+				</ul>
+			</div>
+
+			
+			<div class=" col-12 col-md-4 redes-2">
+				<p>Redes sociales</p>
+				<div class="h_line"></div>
+				<div class="redesblancas">
+				<a class= "twitter"href="https://www.facebook.com/ElpandaHama"><img src="img/facebookw.png"></a>
+				<a class= "facebook"href="#"><img src="img/twitterw.png"></a>
+				<a class= "instagram"href="#"><img src="img/instagramw.png"></a>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 subscripcion">
+				<p><b>¡Suscribete con un correo </b> y obten promociones y descuentos espectaculares!</p>
+				<div class="form-group">
+				
+						<a class="falso-input" href="./correo.html" target="_blank">Correo</a>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!--- fin ---->
+	<footer>
+		<p> © 2021-2026 OUTSTANDING FOX PRODUCTION</p>
+	</footer>
+	<script src="js/sesionManager.js" type="module"></script>
+	<script src="js/app.js" type="module"></script>
+	
+
+</body>
+</html>

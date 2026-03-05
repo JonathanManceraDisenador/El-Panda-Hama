@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>El Panda Hamma</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    	<style>
+
+		.bannerSuperior{
+			height: 120px;
+			background-image: url('/img/franja.jpg');
+			width: 100%;
+		}
+
+		.mensaje{
+			height: 500px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			p{
+				color: gray;
+				font-weight: bold;
+				font-size: 32px;
+			}
+
+			p.tituloMensaje{
+				font-size: 64px;
+			}
+
+			a{
+				color: #e55b0b;
+			}
+
+		}
+
+
+	</style>
+</head>
+<body>
+
+	<!--Botón Pistas-->
+
+
+	<!--- header --->
+	<div class="container header">
+		<div class="row nav">
+			<div class="col-4 redes">
+				<a class= "twitter"href="https://www.facebook.com/ElpandaHama"><img src="img/facebookblu.png"></i></a>
+				<a class= "facebook"href="#"><img src="img/twitterblu.png"></i></a>
+				<a class= "instagram"href="#"><img src="img/instagramblu.png"></i></a>
+			</div>
+			<div class="col-4 logo"><a href="index.html"><img src="img/logoB.png"></a></div>
+			<div class="col-sm-2 col-3 sesionCont">
+				<div class="textosesion dropdown-toggle" data-toggle="dropdown"><img src="" alt=""><span id="textoSesion">Iniciar Sesión</span></div>
+				<img src="img/sesion.png" class="inicses">
+				<div class="sesion" aria-labelledby="dropdownMenuButton">
+					<div class="contenidoSesion" id="sesionActiva">
+						<div class ="localidad"><img src="img/unbicacion.svg" width="30px" alt=""><span>México, CDMX</span><span class="cerrarEsto">X</span></div>
+						<a href="/perfil.html" class="menu-opcion"><div class="simbolo"><img src="img/perfil.svg" alt=""></div><span>Ver Perfil</span></a>
+						<a href="/compras.html" class="menu-opcion"><div class="simbolo"><img src="img/compras.svg" alt=""></div><span>Historial de compras</span> </a>
+						<a href="/configuraciones.html" class="menu-opcion"><div class="simbolo"><img src="img/configuracion.svg" alt=""></div><span>Configuraciónes</span> </a>
+						<button class="btn btn-danger" id="cerrar-sesion">Cerrar Sesión</button>
+					</div>
+					<div class="contenidoSesion" id="sesionInactiva">
+						<div class="combo-label-input"><span class="cerrarEsto">X</span>
+							<label class="subs" for="usuario">Usuario</label>
+							<input type="text" id="usuario" value="usuario">
+						</div>
+						<div class="combo-label-input">
+							<label class="subs" for="password" >Contraseña</label>
+							<input type="password" id="password" value="contrasena">
+						</div>
+						<button class="btn btn-primary" id="iniciar-sesion">Iniciar Sesion</button>
+						<button class="btn btn-secondary" id="registrarme">Registrarme</button>
+					</div>
+				</div>
+			</div>
+		
+			<div class="col--sm-2 col-1 carrito">
+					<div id="contadorCarrito">
+						0
+					</div>
+                    <img src="img/cart1.png" id="img-carrito">
+                      	<div id="carrito">    
+							<span class="cerrarCarrito">X</span>
+							<div class="lista-carrito">
+								<table id="lista-carrito" class="u-full-width">
+									<thead>
+									<tr>
+										<th>Imagen</th>
+										<th>Nombre</th>
+										<th>Precio</th>
+										<th>Cantidad</th>
+										<th></th>
+									</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table> 
+							</div>
+							<span class="carrito-vacio">Sin elementos seleccionados.</span>
+							<div id="filaTotal" class="filaTotal"><span>Total:  </span><span id="cantidadTotal">$5000</span></div>
+							<button class="btn botoncar u-full-width" id="comprar-carrito">Comprar</button>
+							<button class="btn btn-secondary u-full-width" id="vaciar-carrito">Vaciar Carrito</button>
+
+                           
+                         </div>
+			</div>
+		</div>
+	</div>
+
+    <section class="bannerSuperior"></section>
+
+	<!--- contenido --->
+	<section class="mensaje col-12">
+		<p class="tituloMensaje">¡Oops! Parece que algo salio mal.</p>
+		<p>Da clic <a href="/index.html">aqui</a> para regresar a la pagina de inicio.</p>
+	</section>
+
+
+
+
+
+	<!--- Footer ---->
+
+	<div class="footer">
+		<div class="container pie">
+			<div class="row">
+			<div class="col-12 redes-sm">
+				<div class="redesblancas">
+				<a class= "twitter"href="https://www.facebook.com/ElpandaHama"><img src="img/facebookw.png"></a>
+				<a class= "facebook"href="#"><img src="img/twitterw.png"></a>
+				<a class= "instagram"href="#"><img src="img/instagramw.png"></a>
+				</div>
+			</div>
+
+			<div class="col-6 col-md-4 servicio">
+				<p>Servicio al cliente</p>
+				<div class="h_line"></div>
+				<ul>
+ 					<li><a href="/404.html">Contactos</a></li>
+ 					<li><a href="/404.html">FAQS</a></li>
+ 					<li><a href="/404.html">Sobre Nosotros</a></li>
+ 					<li><a href="/404.html">Política de privacidad</a></li>
+ 					<li><a href="/404.html">Término de uso</a></li>
+ 					<li><a href="/404.html">Evíos</a></li>
+				</ul>
+			</div>
+
+			
+			<div class=" col-12 col-md-4 redes-2">
+				<p>Redes sociales</p>
+				<div class="h_line"></div>
+				<div class="redesblancas">
+				<a class= "twitter"href="https://www.facebook.com/ElpandaHama"><img src="img/facebookw.png"></a>
+				<a class= "facebook"href="#"><img src="img/twitterw.png"></a>
+				<a class= "instagram"href="#"><img src="img/instagramw.png"></a>
+				</div>
+			</div>
+			<div class="col-6 col-md-4 subscripcion">
+				<p><b>¡Suscribete con un correo </b> y obten promociones y descuentos espectaculares!</p>
+				<div class="form-group">
+				
+						<a class="falso-input" href="./correo.html" target="_blank">Correo</a>
+				</div>
+			</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+	<!--- fin ---->
+	<footer>
+		<p> © 2021 OUTSTANDING FOX PRODUCTION</p>
+	</footer>
+	<script src="js/sesionManager.js" type="module"></script>
+	
+
+</body>
+</html>
