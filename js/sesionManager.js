@@ -112,7 +112,7 @@ if(USER === null){
     if(window.location.href.includes("registro")){
         window.location.href="index.html"
     }else{
-        sesionCont.children[0].setAttribute("src",'../img/placeholders/A1.png')
+        sesionCont.children[0].setAttribute("src",'img/placeholders/A1.png')
         sesionCont.children[1].textContent = "Usuario"
         sesionInactiva.remove()
     }
