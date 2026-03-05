@@ -444,6 +444,13 @@ input{
 
 /* ----------- carrusel ---------- */
 
+
+.bannerSuperior{
+	height: 120px;
+	background-image: url('/img/franja.jpg');
+	width: 100%;
+}
+
 .comercial {
 	display: flex;
 	align-items: center;
@@ -909,7 +916,7 @@ footer p {
 	}
 
 	.fondo .modulo-final {
-		padding-top: 300px;
+		margin-top: 50%;
 	}
 	
 	.redes a{
@@ -972,6 +979,10 @@ footer p {
 		overflow: scroll;
 	}
 
+	.bannerSuperior{
+		height: 60px;
+		background-size: cover
+	}
 
 	.carousel-control-next, .carousel-control-prev {
 		width: 10%;
