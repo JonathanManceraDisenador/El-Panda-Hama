@@ -470,7 +470,7 @@ input{
 
 .bannerSuperior{
 	height: 120px;
-	background-image: url('/img/franja.jpg');
+	background-image: url('img/franja.jpg');
 	width: 100%;
 }
 
