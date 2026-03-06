@@ -1,6 +1,6 @@
 import {USER} from '../js/USER.js'
 import { hammas } from './DB.js';
-import { agregarAlCarrito, limpiarTablaCarrito } from './sesionManager.js';
+import { agregarAlCarrito, limpiarTablaCarrito,sesion } from './sesionManager.js';
 //variables
 
 var contenedorPistas = document.querySelector('.contenedor-pistas')
@@ -8,6 +8,7 @@ var btnPistas = document.querySelector('.btn-pistas')
 
 var flechasCarrusel = document.querySelectorAll('a[href="#principal-carousel"]');
 
+var btnCerrarEsto = document.querySelector('.cerrarEsto')
 
 const topVendidos = document.querySelector('#topVendidos')
 const listadoCategorias = document.querySelector('#listadoCategorias')
@@ -32,7 +33,9 @@ btnPistas.addEventListener("click", e => {
     abrirContenedor(contenedorPistas)
 })
 
-
+btnCerrarEsto.addEventListener("click", e => {
+    abrirContenedor(sesion)
+})
 
 //funciones
 

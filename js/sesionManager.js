@@ -6,7 +6,7 @@ var contenedorPistas = document.querySelector('.contenedor-pistas')
 var btnPistas = document.querySelector('.btn-pistas')
 
 var sesionCont = document.querySelector('.textosesion')
-var sesion = document.querySelector('.sesion')
+export var sesion = document.querySelector('.sesion')
 var simboloSesion =  document.querySelector('.inicses')
 var btnCerrarEsto = document.querySelector('.cerrarEsto')
 
@@ -48,13 +48,11 @@ sesionCont.addEventListener("click", e => {
 })
 
 simboloSesion.addEventListener("click", e => {
-    e.preventDefault()
     abrirContenedor(sesion)
 })
 
 
 btnCerrarEsto.addEventListener("click", e => {
-    e.preventDefault()
     abrirContenedor(sesion)
 })
 
@@ -137,6 +135,7 @@ function login(){
 
 
 function abrirContenedor(contenedor){
+   
    contenedor.classList.toggle('active')
 }
 

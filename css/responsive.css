@@ -233,7 +233,7 @@ input{
 
 .cerrarModal{
 	background-color: #152052;
-	padding: 16px 20px;
+	
 	color: white;
 	font-size: 16px;
 	font-weight: bold;
@@ -242,6 +242,29 @@ input{
 	position: relative;
 	/*top: 20px;*/
 	right: -100%;
+	animation: prevencion 15s ease forwards;
+}
+
+@keyframes prevencion {
+	0%{
+		display: none;
+		opacity: 0;
+		width: 0;
+		height: 0;
+		padding: 0;
+	}	
+	95%{
+		display: block;
+		opacity: 0;
+		width: 0;
+		height: 0;
+		padding: 0;
+	}100%{
+		opacity: 1;
+		width: auto;
+		height: auto;
+		padding: 16px 20px;
+	}
 }
 
 .fondo .titulo{
@@ -801,6 +824,11 @@ footer p {
 
 @media screen and (max-width: 1200px) {
 
+	.sesion .combo-label-input:first-of-type .subs{
+		margin-top: 34px;
+	}
+
+
 	.carrito {
 		/*background: yellow;*/
 		display: flex;
@@ -967,6 +995,7 @@ footer p {
 		padding: 6px 16px;
 		border-radius: 100%;
 		font-size: 24px;
+		z-index: 50;
 	}
 
 	.carrito-vacio{
